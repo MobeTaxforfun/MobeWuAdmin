@@ -38,6 +38,11 @@ namespace MobeAdmin.API.Domain.Repository.MMSQL
             return mobeAdminContext.SysMenus.SingleOrDefault(c => c.Id == Id);
         }
 
+        public IEnumerable<SysMenu> Pagination(int page, int temsPerPage)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(SysMenu Entity)
         {
             var entity = mobeAdminContext.SysMenus.Find(Entity.Id);
@@ -48,6 +53,6 @@ namespace MobeAdmin.API.Domain.Repository.MMSQL
 
     public interface IMeunRepository
     {
-
+        public IEnumerable<SysMenu> Pagination(int page, int temsPerPage);
     }
 }
