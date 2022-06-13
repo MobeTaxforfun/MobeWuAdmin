@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
@@ -20,10 +21,10 @@
   <ItemGroup>
     <Folder Include="Areas\SystemAdmin\Data\" />
     <Folder Include="Areas\SystemAdmin\Models\" />
+    <Folder Include="Common\AutoMapper\" />
     <Folder Include="Domain\Repository\Redis\" />
     <Folder Include="Models\MSSQL\Entities\" />
     <Folder Include="Models\Redis\" />
-    <Folder Include="Common\" />
   </ItemGroup>
 
 </Project>
