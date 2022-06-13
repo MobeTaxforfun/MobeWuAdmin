@@ -25,6 +25,8 @@ namespace MobeAdmin.API
             {
                 options.UseSqlServer(Configuration[""]);
             });
+            //
+            services.AddAutoMapper(typeof(Startup));
         }
 
         public void Configure(IApplicationBuilder app)
