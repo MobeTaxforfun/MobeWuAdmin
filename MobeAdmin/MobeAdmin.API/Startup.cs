@@ -27,6 +27,7 @@ namespace MobeAdmin.API
             });
             //
             services.AddAutoMapper(typeof(Startup));
+            services.AddSpaStaticFiles();
         }
 
         public void Configure(IApplicationBuilder app)
